@@ -665,7 +665,7 @@ var indent = (function (root) {
   }
 
   function intArray(length) {
-    if (root.Int16Array) {
+    if (root && root.Int16Array) {
       return new Int16Array(length);
     } else {
       var array = new Array(length);
